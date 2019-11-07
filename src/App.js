@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import swal from 'sweetalert';
 import Header from './Header';
 import ContactList from './ContactList';
 import Footer from './Footer';
@@ -52,11 +53,25 @@ class App extends Component {
     ]
   }
 
-  // This function removes the selected contact
+  // This function removes the selected contact and shows a confirmation modal
   removeContact = (contact) => {
-    this.setState((state) => ({
-      contacts: state.contacts.filter((c) => c.id !== contact.id)
-    }))
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this contact!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        willDelete = this.setState((state) => ({
+          contacts: state.contacts.filter((c) => c.id !== contact.id)
+        }))
+        swal("Your contact has been deleted!", {
+          icon: "success",
+        });
+      }
+    });
   }
 
   render () {
