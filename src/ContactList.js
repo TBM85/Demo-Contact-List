@@ -8,11 +8,19 @@ class ContactList extends Component {
     query: ""
   }
 
+  // Update the contacts that match with the search performed
   updateQuery = (query) => {
     this.setState({
       query: query.trim()
     })
   }
+
+  // Clear the search made and show all contacts in the list
+  clearQuery = () => {
+    this.setState({
+      query: ""
+    })
+  } 
 
   render() {
     const { contacts, removeContact } = this.props;
@@ -21,11 +29,13 @@ class ContactList extends Component {
     let showContacts;
     const match = new RegExp(escapeRegExp(query), 'i');
 
+    // Filter the contacts in the search box
     (query) ?
       showContacts = contacts.filter((contact) => match.test(contact.name))
     :
       showContacts = contacts
 
+    // Sort the contact list by 'name'
     showContacts.sort(sortBy('name'));
 
     return(
@@ -40,6 +50,18 @@ class ContactList extends Component {
           />
           <a href="#" className="contact-add">Add Contact</a>
         </div>
+
+        {showContacts.length !== contacts.length && 
+          <div className="contact-text">
+            <span>{showContacts.length} of {contacts.length} contacts</span>
+            <button onClick={this.clearQuery}>All contacts</button>
+          </div>
+        } 
+        { showContacts.length === contacts.length && 
+          <div className="contact-text">
+            <span>There is {contacts.length} contacts</span>
+          </div>
+        }
 
         <ol className="contact-list">
           {showContacts.map((contact) => (
