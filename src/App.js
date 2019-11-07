@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Header from './Header';
 import ContactList from './ContactList';
+import Footer from './Footer';
 import './App.css';
 
 class App extends Component {
@@ -52,12 +54,14 @@ class App extends Component {
 
   render () {
     const { contacts } = this.state; 
-    
+
     return(
       <div className="App">
+        <Header />
         <ContactList 
           contacts={contacts}
         />
+        <Footer />
       </div>
     );
   }
