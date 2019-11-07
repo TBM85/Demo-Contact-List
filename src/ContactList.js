@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import SimpleMenu from './SimpleMenu';
 
 class ContactList extends Component {
   render() {
-    const { contacts } = this.props;
-    
+    const { contacts, removeContact } = this.props;
+
     return(
       <section id="contacts">
         <ol className="contact-list">
@@ -15,6 +16,11 @@ class ContactList extends Component {
                 <p>{contact.phone}</p>
                 <p>{contact.email}</p>
               </div>
+
+              <SimpleMenu 
+                removeContact={removeContact}
+                contact={contact}
+              />
             </li>
           ))}
         </ol>
