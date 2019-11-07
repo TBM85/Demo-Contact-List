@@ -1,26 +1,66 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import ContactList from './ContactList';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    contacts: [
+      {
+        id: "michael",
+        name: "Michael",
+        avatar: './images/1.svg',
+        phone: "+1 888 200-20-20",
+        email: 'michael@gmail.com'
+      },
+      {
+        id: "linda",
+        name: "Linda",
+        avatar: './images/2.svg',
+        phone: "+1 800 656-60-06",
+        email: 'linda@gmail.com'
+      },
+      {
+        id: "tyler",
+        name: "Tyler",
+        avatar: './images/3.svg',
+        phone: "+34 911 101-111",
+        email: 'tyler@gmail.com'
+      },
+      {
+        id: "lean",
+        name: "Lean",
+        avatar: './images/21.svg',
+        phone: "+34 903 330-220",
+        email: 'lean@gmail.com'
+      },
+      {
+        id: "mary",
+        name: "Mary",
+        avatar: './images/22.svg',
+        phone: "+44 203 769-18-80",
+        email: 'mary@gmail.com'
+      },
+      {
+        id: "ryan",
+        name: "Ryan",
+        avatar: './images/23.svg',
+        phone: "+1 305 050-05-05",
+        email: 'ryan@gmail.com'
+      }
+    ]
+  }
+
+  render () {
+    const { contacts } = this.state; 
+    
+    return(
+      <div className="App">
+        <ContactList 
+          contacts={contacts}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
