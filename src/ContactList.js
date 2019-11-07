@@ -7,6 +7,15 @@ class ContactList extends Component {
 
     return(
       <section id="contacts">
+        <div className="contact-search-add">
+          <input
+            className="contact-search"
+            type="text"
+            placeholder="Search contacts"
+          />
+          <a href="#" className="contact-add">Add Contact</a>
+        </div>
+
         <ol className="contact-list">
           {contacts.map((contact) => (
             <li key={contact.id} className="contact-list-item">

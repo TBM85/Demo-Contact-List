@@ -22,6 +22,33 @@ body {
 #contacts {
   min-height: 80vh;
 }
+.contact-search-add {
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #d5d8df;
+  display: flex;
+}
+.contact-search {
+  width: 100%;
+  padding: 20px 20px 20px 60px;
+  background-image: url('./icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 1.2em;
+  font-size: 1.2em;
+  border: 0;
+  outline: none;
+}
+.contact-add {
+  display: block;
+  width: 73px;
+  background: white;
+  background-image: url('./icons/person_add.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  font-size: 0;
+}
 .contact-list {
   width: 100%;
   margin: 0;
