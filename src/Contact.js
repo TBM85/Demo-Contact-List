@@ -23,8 +23,8 @@ class Contact extends Component {
             maxHeight={64}
           />
           <div className="page-contact-details">
-            <input className="page-contact-input" type="text" name="name" placeholder="Name" ref="name" />
-            <input className="page-contact-input" type="number" name="phone" placeholder="Phone" ref="phone" />
+            <input className="page-contact-input" type="text" name="name" placeholder="Name" ref="name" required />
+            <input className="page-contact-input" type="number" name="phone" placeholder="Phone" ref="phone" required />
             <input className="page-contact-input" type="text" name="email" placeholder="Email" ref="email" />
             <button className="page-contact-btn">Add Contact</button>
           </div>

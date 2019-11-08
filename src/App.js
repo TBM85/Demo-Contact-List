@@ -13,7 +13,7 @@ class App extends Component {
       {
         id: "michael",
         name: "Michael",
-        avatar: './images/1.svg',
+        avatar: './images/21.svg',
         phone: "+1 888 200-20-20",
         email: 'michael@gmail.com'
       },
@@ -27,21 +27,21 @@ class App extends Component {
       {
         id: "tyler",
         name: "Tyler",
-        avatar: './images/3.svg',
+        avatar: './images/22.svg',
         phone: "+34 911 101-111",
         email: 'tyler@gmail.com'
       },
       {
         id: "lean",
         name: "Lean",
-        avatar: './images/21.svg',
+        avatar: './images/1.svg',
         phone: "+34 903 330-220",
         email: 'lean@gmail.com'
       },
       {
         id: "mary",
         name: "Mary",
-        avatar: './images/22.svg',
+        avatar: './images/3.svg',
         phone: "+44 203 769-18-80",
         email: 'mary@gmail.com'
       },
@@ -51,6 +51,34 @@ class App extends Component {
         avatar: './images/23.svg',
         phone: "+1 305 050-05-05",
         email: 'ryan@gmail.com'
+      },
+      {
+        id: "aaron",
+        name: "Aaron",
+        avatar: './images/16.svg',
+        phone: "+1 805 408-88-03",
+        email: 'aaron@gmail.com'
+      }, 
+      {
+        id: "carol",
+        name: "Carol",
+        avatar: './images/15.svg',
+        phone: "+34 205 801-27-76",
+        email: 'carol@gmail.com'
+      },
+      {
+        id: "hailey",
+        name: "Hailey",
+        avatar: './images/13.svg',
+        phone: "+1 209 300-83-92",
+        email: 'hailey@gmail.com'
+      }, 
+      {
+        id: "walter",
+        name: "Walter",
+        avatar: './images/24.svg',
+        phone: "+593 999877653",
+        email: 'walter@gmail.com'
       }
     ]
   }
