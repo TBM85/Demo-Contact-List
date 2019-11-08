@@ -76,6 +76,13 @@ class App extends Component {
     });
   }
 
+  // This function adds contact to the contact list
+  createContact = (contact) => {
+    this.setState((state) => ({
+      contacts: state.contacts.concat([ contact ])
+    }))
+  }
+
   render () {
     const { contacts } = this.state; 
 
@@ -88,8 +95,13 @@ class App extends Component {
             removeContact={this.removeContact} 
           />
         )}/>
-        <Route exact path='/create' render={() => (
-          <Contact />
+        <Route exact path='/create' render={({ history }) => (
+          <Contact 
+            createContact={(contact) => {
+              this.createContact(contact)
+              history.push('/')
+            }}
+          />
         )}/>
         <Footer />
       </div>
