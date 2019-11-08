@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import escapeRegExp from 'escape-string-regexp';
 import sortBy from 'sort-by';
 import SimpleMenu from './SimpleMenu';
@@ -48,7 +49,12 @@ class ContactList extends Component {
             value={query}
             onChange={(event) => this.updateQuery(event.target.value)}
           />
-          <a href="#" className="contact-add">Add Contact</a>
+          <Link
+            to="/create"
+            className="contact-add"
+          >
+            Add Contact
+          </Link>
         </div>
 
         {showContacts.length !== contacts.length && 

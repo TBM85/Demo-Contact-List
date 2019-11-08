@@ -113,6 +113,64 @@ body {
   background-size: 100% 100%;
 }
 
+/* PAGE CONTACT */
+#page-contact {
+  min-height: 80vh;
+}
+.page-contact-back {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url('./icons/arrow_back.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  font-size: 0;
+}
+.page-contact-form {
+  padding: 2em;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.page-contact-avatar {
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #eee;
+  background-image: url('./icons/person.svg');
+  background-size: 3em 3em;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+  border-radius: 0.25em;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.page-contact-input {
+  width: 100%;
+  padding: 0.8em 0.8em 0.5em;
+  margin-bottom: 0.5em;
+  font-size: inherit;
+  border-radius: 0.25em;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.page-contact-btn {
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  border-radius: 0.25em;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 24px;
+  margin-top: 1em;
+  float: right;
+}
+.page-contact-btn:not([disabled]):hover {
+  background-color: #555;
+}
+
 /* HEADER & FOOTER */
 #header,
 #footer {

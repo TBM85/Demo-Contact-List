@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import swal from 'sweetalert';
 import Header from './Header';
 import ContactList from './ContactList';
+import Contact from './Contact';
 import Footer from './Footer';
 import './App.css';
 
@@ -80,10 +82,15 @@ class App extends Component {
     return(
       <div className="App">
         <Header />
-        <ContactList 
-          contacts={contacts}
-          removeContact={this.removeContact} 
-        />
+        <Route exact path='/' render={() => (
+          <ContactList 
+            contacts={contacts}
+            removeContact={this.removeContact} 
+          />
+        )}/>
+        <Route exact path='/create' render={() => (
+          <Contact />
+        )}/>
         <Footer />
       </div>
     );
