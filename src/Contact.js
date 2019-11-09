@@ -25,7 +25,7 @@ class Contact extends Component {
           <div className="page-contact-details">
             <input className="page-contact-input" type="text" name="name" placeholder="Name" ref="name" required />
             <input className="page-contact-input" type="number" name="phone" placeholder="Phone" ref="phone" required />
-            <input className="page-contact-input" type="text" name="email" placeholder="Email" ref="email" />
+            <input className="page-contact-input" type="email" name="email" placeholder="Email" ref="email" />
             <button className="page-contact-btn">Add Contact</button>
           </div>
         </form>
