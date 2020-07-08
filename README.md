@@ -17,4 +17,4 @@ This contact list is a small application created with React JS, performed as a l
 * Start the app: npm start
 
 ## License
-Copyright (c) 2019 Tania Ballester Marsal. This project is using [MIT License](LICENSE.md)
+Copyright (c) 2019 Tania Ballester. This project is using [MIT License](LICENSE.md)
