@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Demo-Contact-List/static/css/main.1a2f9d79.chunk.css",
+    "main.js": "/Demo-Contact-List/static/js/main.1e542656.chunk.js",
+    "main.js.map": "/Demo-Contact-List/static/js/main.1e542656.chunk.js.map",
+    "runtime-main.js": "/Demo-Contact-List/static/js/runtime-main.f2862ac4.js",
+    "runtime-main.js.map": "/Demo-Contact-List/static/js/runtime-main.f2862ac4.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/Demo-Contact-List/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.b13dea19.chunk.js": "/Demo-Contact-List/static/js/2.b13dea19.chunk.js",
+    "static/js/2.b13dea19.chunk.js.map": "/Demo-Contact-List/static/js/2.b13dea19.chunk.js.map",
+    "index.html": "/Demo-Contact-List/index.html",
+    "precache-manifest.8246d1899c223f4acf42d80ea239ae60.js": "/Demo-Contact-List/precache-manifest.8246d1899c223f4acf42d80ea239ae60.js",
+    "service-worker.js": "/Demo-Contact-List/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/Demo-Contact-List/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.1a2f9d79.chunk.css.map": "/Demo-Contact-List/static/css/main.1a2f9d79.chunk.css.map",
+    "static/media/App.css": "/Demo-Contact-List/static/media/search.a87eca9e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2862ac4.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.b13dea19.chunk.js",
+    "static/css/main.1a2f9d79.chunk.css",
+    "static/js/main.1e542656.chunk.js"
+  ]
+}
